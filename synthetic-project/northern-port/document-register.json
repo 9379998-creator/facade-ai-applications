@@ -1,0 +1,38 @@
+[
+  {
+    "id": "doc-001",
+    "filename": "NP-AR-F-01-Rev02.pdf",
+    "section": "АР",
+    "title": "Фасад в осях 1-18. Главный вид с набережной",
+    "revision": "02",
+    "format": "A1",
+    "status": "Актуальный"
+  },
+  {
+    "id": "doc-002",
+    "filename": "NP-AR-F-02-Rev01.pdf",
+    "section": "АР",
+    "title": "Фасад в осях 18-1. Дворовый фасад",
+    "revision": "01",
+    "format": "A1",
+    "status": "Устарел (выпущена Rev02)"
+  },
+  {
+    "id": "doc-003",
+    "filename": "NP-AR-F-02-Rev02.pdf",
+    "section": "АР",
+    "title": "Фасад в осях 18-1. Дворовый фасад",
+    "revision": "02",
+    "format": "A1",
+    "status": "Актуальный"
+  },
+  {
+    "id": "doc-004",
+    "filename": "NP-SPEC-SPK-Rev01.xlsx",
+    "section": "Спецификация",
+    "title": "Спецификация элементов витражей СПК",
+    "revision": "01",
+    "format": "XLSX",
+    "status": "Требует сопоставления с чертежами"
+  }
+]
