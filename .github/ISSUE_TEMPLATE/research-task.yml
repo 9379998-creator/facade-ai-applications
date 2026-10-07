@@ -1,0 +1,38 @@
+name: Исследовательская задача (Research Task)
+description: Сформулировать вопрос по отраслевым алгоритмам, ГОСТам или технологиям
+title: "[RESEARCH]: "
+labels: ["research", "documentation"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Исследовательский вопрос
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Зачем нужен ответ (влияние на архитектуру или модель)
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Желательные первичные источники (СП, ГОСТ, отраслевые каталоги)
+
+  - type: input
+    id: timeframe
+    attributes:
+      label: Срок актуальности
+
+  - type: textarea
+    id: expected_deliverable
+    attributes:
+      label: Ожидаемый результат (ADR, таблица, модель данных)
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Ограничения (только открытые данные, без проприетарных систем)

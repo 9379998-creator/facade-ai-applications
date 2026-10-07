@@ -1,0 +1,51 @@
+name: Ошибка в демонстрации (Demo Defect)
+description: Сообщить об ошибке отображения, навигации или верстки интерфейса
+title: "[BUG]: "
+labels: ["bug", "ui"]
+body:
+  - type: input
+    id: screen_name
+    attributes:
+      label: Экран или раздел презентации
+      placeholder: Например, Раздел 07 (Северный порт) или Карта разделов
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: 1. Открыть приложение, 2. Нажать клавишу M, 3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Браузер и операционная система
+      placeholder: Например, Chrome 124 / Windows 11
+
+  - type: input
+    id: viewport_size
+    attributes:
+      label: Размер окна браузера (разрешение)
+      placeholder: Например, 1920x1080 или 375x667
+
+  - type: textarea
+    id: console_errors
+    attributes:
+      label: Ошибки консоли браузера (если есть)

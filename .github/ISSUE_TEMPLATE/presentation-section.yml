@@ -1,0 +1,56 @@
+name: Раздел презентации (Presentation Section)
+description: Предложить добавление или обновление навигационного раздела презентации
+title: "[SECTION]: "
+labels: ["presentation", "content"]
+body:
+  - type: input
+    id: section_title
+    attributes:
+      label: Название раздела
+    validations:
+      required: true
+
+  - type: input
+    id: target_audience
+    attributes:
+      label: Целевая аудитория
+      placeholder: Например, Руководители проектов, Инженеры-конструкторы, Сметчики
+    validations:
+      required: true
+
+  - type: textarea
+    id: key_thesis
+    attributes:
+      label: Ключевой тезис раздела
+    validations:
+      required: true
+
+  - type: textarea
+    id: visual_materials
+    attributes:
+      label: Необходимые визуальные материалы и диаграммы
+    validations:
+      required: true
+
+  - type: input
+    id: related_cases
+    attributes:
+      label: Связанные идентификаторы кейсов
+      placeholder: commercial-tender-package-intake
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Состояние реализации раздела
+      options:
+        - CONCEPT
+        - PROTOTYPE
+        - WORKING
+        - TBD
+    validations:
+      required: true
+
+  - type: textarea
+    id: completion_criteria
+    attributes:
+      label: Критерии готовности раздела

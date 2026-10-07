@@ -1,0 +1,21 @@
+{
+  "prototypeId": "launcher-doc-viewer",
+  "name": "Launcher Engineering Document Viewer",
+  "status": "PROTOTYPE",
+  "version": "0.1.0-synthetic",
+  "supportedFormats": ["PDF", "DWG", "SVG", "XLSX", "DOCX"],
+  "demoFiles": [
+    {
+      "id": "df-01",
+      "name": "NP-AR-F-01-Rev02.pdf",
+      "title": "Главный фасад по набережной (Синтетический чертёж)",
+      "renderStatus": "READY"
+    },
+    {
+      "id": "df-02",
+      "name": "NP-KM-NODE-04.dwg",
+      "title": "Узел примыкания стойки к перекрытию (Синтетический CAD)",
+      "renderStatus": "CONCEPT_CONVERSION"
+    }
+  ]
+}

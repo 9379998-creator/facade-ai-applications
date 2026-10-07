@@ -1,0 +1,113 @@
+name: Отраслевой кейс (Business Case)
+description: Предложить новый кейс применения прикладного алгоритма или ИИ в подразделении
+title: "[CASE]: "
+labels: ["case", "enhancement"]
+body:
+  - type: dropdown
+    id: department
+    attributes:
+      label: Подразделение компании
+      options:
+        - commercial (Коммерческий отдел)
+        - design (Конструкторский отдел)
+        - procurement (Отдел снабжения)
+        - logistics (Служба логистики)
+        - production (Производство)
+        - construction-site (Строительная площадка)
+        - project-management (Руководитель проекта)
+        - finance (Финансово-экономическая служба)
+        - accounting (Бухгалтерия)
+        - quality (Служба качества и ОТК)
+        - as-built (Исполнительная документация)
+        - executive (Руководство компании)
+    validations:
+      required: true
+
+  - type: input
+    id: case_title
+    attributes:
+      label: Название кейса
+      placeholder: Например, Автоматическая раскладка фасадных кассет по осям
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Проблема и узкое место (Friction Point)
+      placeholder: Опишите, где именно теряется время или возникают ошибки
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_process
+    attributes:
+      label: Текущий процесс (Ручной)
+      placeholder: Как эта задача решается сегодня без специализированного приложения
+    validations:
+      required: true
+
+  - type: textarea
+    id: input_data
+    attributes:
+      label: Входные данные
+      placeholder: Форматы и состав документов (PDF, DWG, XLSX, сканы)
+    validations:
+      required: true
+
+  - type: textarea
+    id: output_data
+    attributes:
+      label: Выходной результат
+      placeholder: Что получает сотрудник (таблица, чертёж, предупреждение, КП)
+    validations:
+      required: true
+
+  - type: textarea
+    id: human_role
+    attributes:
+      label: Роль человека (Human-in-the-loop)
+      placeholder: В какой точке специалист проверяет и утверждает результат
+    validations:
+      required: true
+
+  - type: textarea
+    id: ai_role
+    attributes:
+      label: Роль ИИ и алгоритмов
+      placeholder: Какая часть решается детерминированным алгоритмом, а какая нейросетью
+    validations:
+      required: true
+
+  - type: input
+    id: measurement_method
+    attributes:
+      label: Способ измерения эффекта
+      placeholder: Хронометраж, процент найденных коллизий, предотвращённый перерасход
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Текущее состояние реализации
+      options:
+        - CONCEPT (Концепт)
+        - PROTOTYPE (Прототип)
+        - WORKING (Работает)
+        - TBD (Уточняется)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: data_safety
+    attributes:
+      label: Подтверждение безопасности данных
+      options:
+        - label: Я подтверждаю, что описание кейса НЕ содержит реальных конфиденциальных цен, договоров или персональных данных
+          required: true
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Открытые вопросы и риски

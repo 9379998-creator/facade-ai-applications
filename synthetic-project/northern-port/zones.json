@@ -1,0 +1,30 @@
+[
+  {
+    "id": "zone-a-low",
+    "name": "Секция А (этажи 1-6)",
+    "elevationRange": "-0.300 ... +24.500",
+    "orientation": "Главный фасад, набережная",
+    "primarySystem": "СПК-01"
+  },
+  {
+    "id": "zone-a-mid",
+    "name": "Секция А (этажи 7-16)",
+    "elevationRange": "+24.500 ... +60.500",
+    "orientation": "Типовой ярус",
+    "primarySystem": "СПК-01 + НВФ-01"
+  },
+  {
+    "id": "zone-a-high",
+    "name": "Секция А (этажи 17-24)",
+    "elevationRange": "+60.500 ... +89.300",
+    "orientation": "Высотный ярус",
+    "primarySystem": "СПК-01 + НВФ-01 (усиленный ветровой допуск)"
+  },
+  {
+    "id": "zone-b-all",
+    "name": "Секция Б (этажи 1-16)",
+    "elevationRange": "-0.300 ... +60.500",
+    "orientation": "Дворовый фасад",
+    "primarySystem": "НВФ-01 + СПК-01"
+  }
+]
